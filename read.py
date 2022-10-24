@@ -2,7 +2,7 @@
 import cv2 as cv
 print( cv.__version__ )
 
-path = 'Photos/candy1.jpg'
+path = 'Photos/candyt_4.jpg'
   
 # Read the image using imread function
 image = cv.imread(path)
@@ -18,14 +18,14 @@ cv.imshow("Resized_Window", image)
 cv.waitKey(0)
 
 # Saving the Image as it is with another name
-cv.imwrite("my-dog.jpg",image)
+cv.imwrite("my-cat.jpg",image)
 
 # Convert the image to grayscale and save it
 gray_image = cv.cvtColor(image,cv.COLOR_BGR2GRAY)
-cv.imwrite("dog-greyscale.jpg",gray_image)
+cv.imwrite("cat-greyscale.jpg",gray_image)
 
 # Change the type of the image file
-cv.imwrite("mydog.png",image)
+cv.imwrite("mycat.png",image)
 
 # Resize the image using resize() function (Upscale with resize()
 # If providing a value >100 it will upscale the image.)
